@@ -1,17 +1,17 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Chat
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" class="contenido">
+  <div class="todo">
+    <h1 class="welcome-text">Bienvenido al Chat</h1>
+    <img src="assets/chat.png" alt="Chat Imagen" class="imagen" />
+  </div>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <app-login></app-login>
 </ion-content>
+
