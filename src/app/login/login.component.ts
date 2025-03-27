@@ -21,11 +21,11 @@ export class LoginComponent implements OnInit {
   login() {
     this.authService.login().subscribe({
       next: (result) => {
-        console.log('Usuario autenticado', result.user);
-        console.log('Token de acceso', result.token);
+        console.log('Usuario:', result.user);
+        console.log('Token:', result.token);
       },
       error: (error) => {
-        console.error('Error de autenticación', error);
+        console.error('Error:', error);
         
       }
     });

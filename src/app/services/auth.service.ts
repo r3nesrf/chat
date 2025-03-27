@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core'; 
 import { AngularFireAuth } from '@angular/fire/compat/auth'; 
 import { Observable, from } from 'rxjs';
-import { getAuth, GoogleAuthProvider, signInWithPopup, User } from 'firebase/auth'; 
+import { getAuth, GoogleAuthProvider, signInWithPopup} from 'firebase/auth'; 
 import { map } from 'rxjs';
 import { initializeApp } from "firebase/app";
 import { environment } from 'src/environments/environment';
 import { authState } from '@angular/fire/auth';
+import { User } from 'firebase/auth';
 
 
 @Injectable({
@@ -29,6 +30,7 @@ export class AuthService {
       })
     );
   }
+
 }
 
 const app = initializeApp(environment);
